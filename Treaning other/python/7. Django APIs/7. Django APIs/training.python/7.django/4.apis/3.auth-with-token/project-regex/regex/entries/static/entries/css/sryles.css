@@ -1,0 +1,58 @@
+/* General element styles */
+* {
+  box-sizing: border-box;
+  font-family: Calibri;
+}
+body {
+  font-size: 15px;
+}
+table {
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid grey;
+  padding: 5px;
+}
+th {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Tables */
+.heading {
+  background-color: lavender;
+}
+.row {
+  background-color: aliceblue;
+}
+.row-alternate {
+  background-color: white;
+}
+
+/* Others */
+.center-text {
+  text-align: center;
+}
+.footer {
+  margin-top: 10px;
+}
+.highlight-text {
+  color: cornflowerblue;
+}
+.section {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+.success {
+  color: green;
+}
+
+/* Use this for audience to try out something simple */
+/*
+* {
+  box-sizing: border-box;
+  font-color: blue;
+  font-size: 15px;
+}
+*/

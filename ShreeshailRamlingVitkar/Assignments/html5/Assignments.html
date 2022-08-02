@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments of HTML 5</title>
+    <script src="../html5/assign.js"></script>
+</head>
+<body>
+    <center>
+<!-- ---------------------------------  Assignment No 1  ------------------------------------------------>
+
+        <div id="assignment-1">
+        <h3>Assignment No 1</h3>
+        <p><b>Q. Create an HTML5 application to locate your browser location (in the form of longitude and
+            latitude).</b></p>
+        <button type="button" onclick="oneGetMyLocation()">Click Me for view My Location</button>
+        <button type="button" onclick="oneHide()">Hide My Location</button>
+        <p id="output-one"></p>
+        <hr>
+
+<!-- ---------------------------------  Assignment No 2  ------------------------------------------------>
+        
+        <div id="assignment-2">
+            <h3>Assignment No 2</h3>
+            <p><b>Q. Implement the Selector API to color the Para which is inside the div tag by adding a button
+                to the web page named as COLOR.</b></p>
+            <div>
+                <p class="twoPara">This is the paragraph which is going to change his color after clicking below button</p>
+            </div>
+            <button type="button" onclick="twoChangeColor()">COLOR</button>
+        </div>
+        <hr>
+
+<!-- ---------------------------------  Assignment No 3  ------------------------------------------------>
+        
+        <h3>Assignment No 3</h3>
+        <p><b>Q. Use Drag and Drop API and show the working.</b></p>
+        <style>
+            #three-drop {
+                width: 250px;
+                height: 300px;
+                padding: 10px;
+                border: 1px solid #aaaaaa;
+                }
+        </style>
+        <div id="assignment-3">
+            <div id="three-drop" ondrop="drop(event)" ondragover="allowDrop(event)">Drag your favourite Programming Language</div>
+            <br>
+            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" id="three-drag" draggable="true" ondragstart="drag(event)" width="250" height="250">
+        </div>
+        <hr>
+
+<!-- ---------------------------------  Assignment No 4  ------------------------------------------------>
+        
+        <h3>Assignment No 4</h3>
+        <p><b>Q. Explain Web Worker implementation by giving proper script.</b></p>
+        <p>At the time of script execuation the web page is in unresponsive mode but the web worker script is running at background without affecting by the script excuation and the performance of the page </p>
+        
+        <button type="button" onclick="webWorker()"> Start Web Worker </button>
+        <button type="button" onclick="stopWebWorker()"> Stop Web Worker </button>
+
+        <p id="four-output"></p>
+        <hr>
+
+
+
+<!-- ---------------------------------  Assignment No 5  ------------------------------------------------>
+
+        <h3> Assignment No 5</h3>
+        <p><b>Q. Create a canvas to draw </b></p>
+        <canvas id="paper" width="200px" height="200px">
+            browser dont support 
+        </canvas>
+        <script>
+            myCanvas();
+        </script>
+        <marquee behavior="" direction="">THANK YOU</marquee>
+        <hr>
+
+<!-- ---------------------------------  ThankYou  ------------------------------------------------>
+
+      
+
+    
+
+</center>
+</body>
+</html>

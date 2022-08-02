@@ -1,0 +1,21 @@
+<p>parent works!</p>
+
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">User ID</th>
+            <th scope="col">Name</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let e of employees">
+          <tr>
+            <th scope="row" (click)="getEmp(e)"><a href="javascript:0">{{e.userId}}</a></th>
+            <td>{{e.name}}</td>
+          </tr>
+        </tbody>
+    </table>
+
+    <h4>Number of times clicked on Contact(Child --> Parent):- {{count}}</h4>
+
+<app-child [empDetail]="empDetail" (clickCount)="takeCount($event)"> </app-child>

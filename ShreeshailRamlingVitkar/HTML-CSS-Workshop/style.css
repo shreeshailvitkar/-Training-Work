@@ -1,0 +1,87 @@
+header
+{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5b725deeaf20963d6fcde0a2/1550432854451-JYXU64B0Y0HXFDBB5IF1/header.jpg?format=1000w");
+    
+   
+}
+h1
+{
+    
+    padding-top: 20px;
+    padding-left: 10px;
+    color: cornsilk;
+}
+header > h3
+{
+    color: cornsilk;
+}
+
+.flex-container
+{
+    display: flex;
+    background-color: cornflowerblue;
+}
+
+.flex-container > div
+{
+    background-color: rgb(120, 100, 184);
+    height: 350px;
+    width: 33.33%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.button 
+{
+    background-color: #4cacaf; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+
+
+    
+}
+.button
+{
+    
+    padding-left: 150px;
+    padding-right: 150px;
+    
+}
+
+footer
+{
+    text-align: end;
+    background-image: url("https://gcteng.com/wp-content/uploads/footer-background.png");
+    background-repeat: no-repeat;
+    height: 150px;
+    width: ;
+    
+
+}
+
+footer > b
+{
+    padding-right: 25px;
+}
+
+
+#contact-details
+{
+    align-items: center;
+    color: cornsilk;
+    align-items: center;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }

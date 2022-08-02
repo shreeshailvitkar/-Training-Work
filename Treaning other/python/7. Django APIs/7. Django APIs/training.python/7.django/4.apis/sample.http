@@ -1,0 +1,37 @@
+GET http://localhost:8000/api/entries/
+
+###
+
+GET http://localhost:8000/api/entries/ 
+Authorization: Token 608da285e202324a79bc4b177e4c2b4fc68acf8f
+
+###
+
+GET http://localhost:8000/api/entries/3
+Authorization: Token 608da285e202324a79bc4b177e4c2b4fc68acf8f
+
+###
+
+PATCH http://localhost:8000/api/entries/3/
+Authorization: Token 608da285e202324a79bc4b177e4c2b4fc68acf8f
+content-type: application/json
+
+{
+    "pattern": "[0-9"
+}
+
+###
+
+PUT http://localhost:8000/api/entries/3/
+Authorization: Token 608da285e202324a79bc4b177e4c2b4fc68acf8f
+content-type: application/json
+
+{
+    "pattern": "[0-9"
+}
+
+###
+
+DELETE http://localhost:8000/api/entries/4/
+Authorization: Token 608da285e202324a79bc4b177e4c2b4fc68acf8f
+content-type: application/json

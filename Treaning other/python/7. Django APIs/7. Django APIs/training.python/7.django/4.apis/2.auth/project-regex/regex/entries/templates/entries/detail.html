@@ -1,0 +1,25 @@
+{% extends 'entries/base.html' %}
+
+{% block title %} Detail for Entry - {{ entry.id }} {% endblock title %}
+
+{% block content %}
+    <h1>Detail for Entry - {{ entry.id }}</h1>
+    <p>Id: {{ entry.id }}</p>
+    <p>Pattern: {{ entry.pattern }}</p>
+    <p>Test Strings:
+        <ul>
+            {% for test_string in entry.test_strings.all %}
+            <li>{{ test_string.string }}</li>
+            {% endfor %}
+        </ul>
+    </p>
+    <p>User: {{ entry.user.username }}</p>
+    <p>Date added: {{ entry.date_added }}</p>
+
+{% endblock content %}
+
+{% block footer %}
+    <div class="footer">
+        Go <a href="{% url 'home' %}">Home</a> <a href="{% url 'form' entry.id %}">Edit</a> 
+    </div>
+{% endblock footer %}

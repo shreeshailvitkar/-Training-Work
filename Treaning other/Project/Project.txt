@@ -1,0 +1,47 @@
+----------------------
+Project
+----------------------
+
+-------------------
+What is it
+-------------------
+A website where users can write short messages which are stored and published.
+
+-------------------
+Details
+-------------------
+Build a system where users can share "shouts" (posts) and images across the network, similar to Facebook, Twitter, LinkedIn, etc. It consists of two types of roles:
+1. User
+2. Admin
+
+User:
+1. Will need to register.
+2. Can upload shouts as text, images, audio, videos.
+3. Can accept/reject the invite of other users and make friends.
+4. Only friends can see shouts.
+5. Can remove any friend.
+6. Can report any shouts.
+7. Comments on the shouts (Optional).
+
+The User facing application should be developed using Angular at frontend and REST APIs using Django framework at backend.
+
+Admin:
+1. Has to approve the registration request of users.
+2. Can delete shouts of users.
+3. Can delete users.
+4. Can delete reports of shouts.
+
+The Admin facing application should be purely developed using Django framework, without Angular.
+
+-------------------
+Software Requirements
+-------------------
+Python
+Django Framework
+SQLite
+JS
+Angular
+CSS3
+SASS
+Bootstrap
+RWD

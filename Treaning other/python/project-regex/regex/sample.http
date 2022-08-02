@@ -1,0 +1,19 @@
+
+GET http://localhost:8000/api/entries/
+###
+GET http://localhost:8000/api/entries/ 
+Authorization: Token 2f188ff28538ac95f279ab7e4d06851e804119af
+
+###
+GET http://localhost:8000/api/entries/2
+Authorization: Token 2f188ff28538ac95f279ab7e4d06851e804119af
+
+
+###
+PATCH http://localhost:8000/api/entries/2/
+Authorization: Token 2f188ff28538ac95f279ab7e4d06851e804119af
+content-type: application/json
+
+{
+    "pattern": "[0-9]"
+}

@@ -1,0 +1,16 @@
+<!-- As it says, use and override as needed. -->
+{% extends 'entries/base.html' %}
+
+{% block title %} Welcome to the Entry Website {% endblock title %}
+
+{% block content %}
+    <!-- A variable. -->
+    <h1>Welcome {{ username }}!</h1>
+
+    <ul>
+        <li><a href="{% url 'list' %}">Entries</a></li>
+        <li><a href="{% url 'admin:index' %}">Admin Panel</a></li>
+    </ul>
+{% endblock content %}
+
+{% block footer %}{% endblock footer %}

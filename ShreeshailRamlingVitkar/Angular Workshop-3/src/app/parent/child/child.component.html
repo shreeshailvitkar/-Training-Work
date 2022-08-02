@@ -1,0 +1,14 @@
+<p>child works!</p>
+<ng-container *ngIf="empDetail != ''">
+<div class="card">
+    <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="John" style="width:100%">
+    <h1>{{empDetail.name}}</h1>
+    <p class="title">{{empDetail.userType}}</p>
+    <p>Harvard University</p>
+    <div style="margin: 24px 0;">
+      <p>Is Active User :- {{empDetail.isActiveUser}}</p>
+    </div>
+    <p><button (click)="clickCountF()">Contact</button></p>
+  </div>
+</ng-container>
+

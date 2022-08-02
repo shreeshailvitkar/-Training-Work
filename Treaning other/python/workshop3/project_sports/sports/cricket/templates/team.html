@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+</head>
+<body>
+    <div class="content">
+    <h1>Entries</h1>
+    <div>
+    Found <span class="highlight-text">{{ entries_team | length }}</span> entries.
+    </div>
+    {% if entries_team %}
+    <table>
+        <thead>
+            <tr class="heading">
+                <th>Team Name</th>
+                <th>Owner</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in entries_team %}
+                <tr class="{% cycle 'row' 'row-alternate' %}">
+                    <td>{{ entry.team_name }}</td>
+                    <td>{{ entry.owner }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+    </div>
+</body>
+</html>

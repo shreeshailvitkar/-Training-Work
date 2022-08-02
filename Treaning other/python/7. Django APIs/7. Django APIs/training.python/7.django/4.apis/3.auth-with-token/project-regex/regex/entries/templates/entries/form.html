@@ -1,0 +1,15 @@
+{% extends 'entries/base.html' %}
+
+{% block title %} Edit for Entry - {{ id }} {% endblock title %}
+
+{% block content %}
+    <h1>Edit for Entry - {{ id }}</h1>
+    
+    <form action="{% url 'form' id %}" method="post">
+        {% csrf_token %}
+        <div class="section">
+            {{ form.as_p }}
+        </div>
+        <input type="submit" value="Submit" />
+    </form>
+{% endblock content %}

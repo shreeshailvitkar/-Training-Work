@@ -1,0 +1,78 @@
+/*  ---------------------------------  Assignment No 1 ------------------------------------------  */
+
+
+table, th, td
+{
+    border: 1px solid black;
+}
+
+th
+{
+    background-color: rgb(190, 190, 190);
+}
+
+tr:nth-of-type(2n)
+{
+    background-color: greenyellow;
+}
+
+/*  ---------------------------------  Assignment No 2 ------------------------------------------  */
+
+.navbar {
+    overflow: hidden;
+    background-color: green;
+  }
+
+.navbar a 
+{
+    float: left;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown 
+{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dorodown-button
+{
+    font-size: 18px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dorodown-button 
+{
+    color: yellow;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: green;
+    min-width: 160px;
+}
+
+.dropdown-content a 
+{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}

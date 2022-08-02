@@ -1,0 +1,30 @@
+{% extends 'entries/base.html' %}
+
+{% block title %} Entries {% endblock title %}
+
+{% block content %}
+    <h1>Entries</h1>
+    <div>
+        Found <span class="highlight-text">{{ entries_list | length }}</span> entries.
+    </div>
+    {% if entries_list %}
+        <table>
+            <thead>
+                <tr class="heading">
+                    <th>Id</th>
+                    <th>Pattern</th>
+                    <th>User</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in entries_list %}
+                    <tr class="{% cycle 'row' 'row-alternate' %}">
+                        <td><a href="{% url 'detail' entry.id %}">{{ entry.id }}</a></li>
+                        <td>{{ entry.pattern }}</td>
+                        <td>{{ entry.user }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+{% endblock content %}

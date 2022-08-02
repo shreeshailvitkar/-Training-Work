@@ -1,0 +1,17 @@
+<p>products works!</p>
+
+<div class="groups row">
+    <ng-container *ngFor="let p of products">
+    <div class="card">
+      <img src={{p.imgUrl}} alt="John" style="width:100%">
+      <h1>{{p.productName}}</h1>
+      <p class="title">Avalible : {{p.quantityAvaibale}}</p>
+      <b>Price : {{p.price | currency:'INR'}}</b>
+      <br>
+      <p *ngIf="p.isAvailable; else elseBlock"> <button >Add to Cart</button></p>
+  
+      <ng-template #elseBlock><p><button disabled>Add to Cart</button></p> </ng-template>
+  
+    </div>
+    </ng-container>
+    </div>
