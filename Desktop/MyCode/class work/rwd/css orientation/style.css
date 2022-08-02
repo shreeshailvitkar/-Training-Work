@@ -1,0 +1,26 @@
+
+
+@media(orientation:portrait)
+{
+    .person-img{
+        border-radius: 50%;
+    }
+    
+}
+
+@media(orientation:landscape)
+{
+    .person-img{
+        border-radius: 50%;
+       
+        
+    }
+    .cybage-img{
+        width: 100%;
+     
+    }
+    div#cybage-img{order: 1;}
+    div#person-img{order: 2;}
+    
+   
+}

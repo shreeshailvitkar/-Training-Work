@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <marquee> Welcome to MyPage!!!</marquee>
+    </header>
+    <section>
+        <nav>
+            <a href="./nav.html">NAV</a>
+        </nav>
+
+        <article contenteditable="true">
+            Welcome to the MyShop
+        </article>
+
+        <details>
+            <summary>
+                Click to know more about us
+            </summary>
+
+            <p>This is how summery and detalis tag work</p>
+        </details>
+
+        <figure>
+            <img src="https://th.bing.com/th/id/OIP.--Bhv05grQ8eBnssITOZqgHaIt?pid=ImgDet&rs=1" height="100" width="100">
+            <figcaption>T-shirt </figcaption>
+        </figure>
+        <a href="">Add Cart</a>
+
+        <figure>
+            <img src="https://topstreetwear.com/media/image/d1/2c/d7/600JS-064-1_600x600.jpg" height="100" width="100">
+            <figcaption>T-shirt </figcaption>
+        </figure>
+        <a href="">Add Cart</a>
+        <br>
+        Today is <time datetime="05-01-2022">05-jan-2022</time>
+        <center>
+        <hr>
+        <p contenteditable="true">Content editiable</p>
+        <hr>
+        <h3>Video/Audio tags</h3>
+        <video width="400px" height="400px" controls autoplay>
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-city-buildings-lit-up-at-night-2028-large.mp4"/>
+        <p>browser dont support</p>
+        </video>
+        <hr>
+        <h3>Full Screen API</h3>
+        <hr>
+
+        <h3>query selector </h3>
+        <button type="button" onclick="resetRows()">Reset ALL</button>
+        <button type="button" onclick="buttonSelectFirstOdd()">Select First ODD</button>
+        <button type="button" onclick="buttonSelectAllOddRows()">Select All ODD</button>
+
+
+        <ul id="dataList">
+            <li class="odd">ODD</li>
+            <li class="even">EVEN</li>
+            <li class="odd">ODD</li>
+            <li class="even">EVEN</li>
+            <li class="odd">ODD</li>
+            <li class="even">EVEN</li>
+        </ul>
+
+        <script>
+            function buttonSelectFirstOdd()
+            {
+                var selectrow = document.querySelector('li.odd');
+                selectrow.style.color = 'red';
+            }
+            function buttonSelectAllOddRows()
+            {
+                var selectedrow = document.querySelectorAll('li.odd');
+                for(var i=0;i<selectedrow.length;i++)
+                    selectedrow[i].style.color = 'pink';
+            }
+
+            function resetRows()
+            {
+
+                var selectedrow = document.querySelectorAll('li')
+                for(var i=0;i<selectedrow.length;i++)
+                    selectedrow[i].style.color = 'black';
+
+            }
+        </script>
+
+        <hr>
+            <h3>drag and drop</h3>
+        <hr>
+
+        <h3> Canvas</h3>
+    
+        <canvas id="paper" width="200px" height="200px">
+            browser dont support 
+        </canvas>
+        
+        <canvas id="paper1" width="200px" height="200px">
+            browser dont support 
+        </canvas>
+        
+        <script>
+            var paper = document.getElementById('paper');
+            
+            //var pen = paper.getContext('2d');
+            //pen.fillStyle = "rgb(255,0,0)";
+            //pen.fillRect(30,30,50,50);
+
+            var paper1 = document.getElementById('paper1');
+            var ctx = paper.getContext('2d')
+            ctx.beginPath();
+            ctx.arc(75, 75, 50, 0, Math.PI * 2, true); // Outer circle
+            ctx.moveTo(110, 75);
+            ctx.arc(75, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+            ctx.moveTo(65, 65);
+            ctx.arc(60, 65, 5, 0, Math.PI * 2, true);  // Left eye
+            ctx.moveTo(95, 65);
+            ctx.arc(90, 65, 5, 0, Math.PI * 2, true);  // Right eye
+            ctx.stroke();
+
+            
+        </script>
+
+        <hr>
+
+        <h3> Browser Storage Click Count</h3>
+
+        <script>
+            function clickCounter()
+            {
+                if(typeof(Storage)!="undefined")
+                {
+                    if(sessionStorage.clickcount)
+                    {
+                        sessionStorage.clickcount=Number(sessionStorage.clickcount)+1;
+
+                    }else
+                    {
+                        sessionStorage.clickcount=1;
+                    }
+
+                    document.getElementById("result").innerHTML = "Count  "+ sessionStorage.clickcount + "   times";
+                }else
+                {
+                    document.getElementById("result").innerHTML="dont support";
+                }
+            }
+        </script>
+
+        <button type="button" onclick="clickCounter()">Click Here</button>
+        <div id="result"></div>
+  
+        
+
+
+        </center>
+    </section>
+
+    <footer style="background-color: gray;">
+        @Copyright MyPage.
+    </footer>
+</body>
+</html>

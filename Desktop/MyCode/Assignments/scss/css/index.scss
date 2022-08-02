@@ -1,0 +1,41 @@
+$container_height: 150px;
+$container_width: 500px;
+$default_margin: 5px;
+
+
+.theme-1
+{
+    height: $container_height;
+    width: $container_width;
+    border: solid black;
+    
+}
+
+.right
+{
+    float: right;
+    height: 135px;
+    width: 200px;
+    border: solid black;
+    margin-right: 5px;
+    
+    
+}
+
+.left
+{
+    margin: $default_margin;
+}
+
+.button
+{
+    margin: $default_margin;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    
+}
+
+

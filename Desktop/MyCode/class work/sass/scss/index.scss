@@ -1,0 +1,24 @@
+$primary_color:red;
+$s_margin: 10px;
+$ss_margin: 20px;
+
+.box
+{
+    color: $primary_color;
+    margin: $s_margin / 2;
+    margin-top: $ss_margin*2;
+    height: 100px;
+    width: 100px;
+    &:hover
+    {
+        background-color: black;
+    }
+    
+}
+
+$colors: red,#ffa500,yellow;
+
+@each $var in $colors {
+    
+}
+

@@ -1,0 +1,21 @@
+@media(max-width:1100px)
+{
+    body{
+        background-color: blue;
+    }
+}
+
+@media(max-width:1000px)
+{
+    body{
+        background-color: green;
+    }
+}
+
+
+@media(max-width:900px)
+{
+    body{
+        background-color: red;
+    }
+}

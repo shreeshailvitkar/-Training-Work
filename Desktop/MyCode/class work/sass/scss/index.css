@@ -1,0 +1,12 @@
+.box {
+  color: red;
+  margin: 5px;
+  margin-top: 40px;
+  height: 100px;
+  width: 100px;
+}
+
+.box:hover {
+  background-color: black;
+}
+/*# sourceMappingURL=index.css.map */

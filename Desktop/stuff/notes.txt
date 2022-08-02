@@ -1,0 +1,23 @@
+Utilities for all
+\\ct-share\UtilitiesForAll
+
+
+PFB, the path to training content and assignment folders :
+
+\\Pune-share\Training_Cyb\Vinita\FrTP-Jan'22
+
+PFB, the path to recordings:
+
+\\EON-SHARE-1-1\CDAC_Frtp_April2021\Recordings FrTP-Jan'22
+
+
+12-01-2022 Assignment
+web worker API
+complete all assignments HTML5
+
+
+01/17/2022
+Object method seal and freeze diffence
+closer in js
+ 	
+

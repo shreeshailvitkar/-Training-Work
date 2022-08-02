@@ -1,0 +1,128 @@
+
+/*
+article
+{
+    background-color: antiquewhite;
+    color: blue;
+    width: 200px;
+}
+*/
+/* 1*/
+#my-font
+{
+    font-size: 30px;
+    font-style: italic;
+}
+
+.my-border
+{
+    border: 2px dashed greenyellow;
+    border-radius: 10px;
+    font-size: 50px;
+}
+
+
+a[href^="https"]
+{
+    background: yellow;
+}
+
+/*
+p:nth-child(2n)
+{
+    background: violet;
+}
+*/
+
+p:nth-of-type(2n)
+{
+    background: yellowgreen;
+}
+
+p:only-child
+{
+    background: red;
+}
+
+input:out-of-range
+{
+    border: 5px solid red;
+}
+
+/*
+div
+{
+    border: 1px solid black;
+    padding: 20px;
+    background-image: url("https://images.pexels.com/photos/381739/pexels-photo-381739.jpeg");
+}
+*/
+#myGradient
+{
+    height: 250px;
+    background: linear-gradient(to bottom right, orange, green);
+}
+
+#radialGriant
+{
+    height: 250px;
+    background:radial-gradient(yellow 25%, orange 25%, blue 50%);
+}
+
+
+.original
+{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border: 2px solid;
+    transition: width 3s ease 2s, background-color 4s;
+}
+
+.transform-effects
+{
+    transform: skew(30deg,20deg);
+    transform: scale(2);
+    transform: rotate(180deg);
+    transform: translate(30px,50px);
+    
+}
+
+.original:hover
+{
+    width: 500px;
+    background-color: chartreuse;
+    transform: rotate(30deg);
+}
+
+#article-ar
+{
+    column-count: 3;
+    column-gap: 50px;
+    column-width: 100px;
+    column-rule: 2px solid;
+}
+
+
+.flex-container
+{
+    display: flex;
+    background-color: crimson;
+}
+
+.flex-container > div
+{
+    background-color: cyan;
+    margin: 10px;
+    padding: 20px;
+    
+}
+
+.flex-container > div > p
+{
+    background-color: cyan;
+    margin: 10px;
+    padding: 20px;
+    font-family: cursive;
+    
+}
